@@ -25,23 +25,29 @@ Real-world hospital billing logs contain blanks, duplicate records from system l
 | 6. Dashboard | Tableau | Interactive executive dashboard (Treemap, Histogram, Combo chart, Box Plot) |
 
 ## 📁 Repo Structure
-
+```
 hospital-billing-analytics/
 ├── data/
-│ └── healthcare_dataset.csv
+│   └── healthcare_dataset.csv
 ├── scripts/
-│ ├── cleaning_data.py
-│ ├── load_csv_to_MySql.py
-│ ├── load_data_MysqlToPython.py
-│ └── matplotlib_charts.py
+│   ├── cleaning_data.py
+│   ├── load_csv_to_MySql.py
+│   ├── load_data_MysqlToPython.py
+│   └── matplotlib_charts.py
 ├── sql/
-│ └── queries.sql
+│   └── healthcare_dataset_queries.sql
 ├── charts/
+│   ├── chart1_age_group_distribution.png
+│   ├── chart2_monthly_admissions_trend.png
+│   ├── chart3_condition_distribution.png
+│   └── chart4_insurance_claims.png
 ├── excel/
-│ └── cleaned_healthcare_dataset_with_pivot.xlsx
+│   └── cleaned_healthcare_dataset_with_pivot.xlsx
 ├── tableau/
+│   └── HealthcareDataset_Dashboard.twbx
 └── presentation/
-└── Hospital_Analytics_Viva.pptx
+    └── Hospital_Analytics_ppt.pptx
+```
 
 ## 🔑 Key Finding
 
