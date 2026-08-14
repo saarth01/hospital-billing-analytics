@@ -20,8 +20,8 @@ df.columns = [col.strip().lower().replace(" ","_") for col in df.columns]
 df["name"] = [str(clean).strip().title() for clean in df["name"]]
 
 # 6. Convert date columns to proper date objects
-df["date_of_admission"] = pd.to_datetime(df["date_of_admission"], errors="coerce").dt.date
-df["discharge_date"] = pd.to_datetime(df["discharge_date"], errors="coerce").dt.date
+df["date_of_admission"] = pd.to_datetime(df["date_of_admission"], errors="coerce")
+df["discharge_date"] = pd.to_datetime(df["discharge_date"], errors="coerce")
 
 print(df.head())
 
